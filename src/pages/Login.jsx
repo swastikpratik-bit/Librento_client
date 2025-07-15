@@ -16,10 +16,7 @@ const Login = () => {
     password: "",
   });
 
-
   const dispatch = useDispatch();
-
-
 
   const navigate = useNavigate();
 
@@ -173,12 +170,12 @@ const Login = () => {
               Demo user credentials:
             </p>
             <p className="text-sm text-gray-800 text-center font-medium">
-              Email: <span className="text-emerald-600">user@email.com</span> |
-              Password: <span className="text-emerald-600">user@email</span>
+              Email: <span className="text-emerald-600">user@gmail.com</span> |
+              Password: <span className="text-emerald-600">user1@gmail</span>
             </p>
             <p className="text-sm text-gray-800 text-center font-medium">
-              Email: <span className="text-emerald-600">admin@email.com</span> |
-              Password: <span className="text-emerald-600">admin@email</span>
+              Email: <span className="text-emerald-600">admin@gmail.com</span> |
+              Password: <span className="text-emerald-600">admin@gmail</span>
             </p>
           </div>
         </div>

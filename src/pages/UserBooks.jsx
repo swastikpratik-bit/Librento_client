@@ -118,13 +118,16 @@ const UserBooks = () => {
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Browse Books
           </h1>
           <p className="text-gray-600">
             Discover and explore our library collection
+          </p>
+          <p className="text-sm text-blue-800">
+            • Books can be borrowed for 14 days
           </p>
         </div>
 

@@ -45,15 +45,11 @@ const Register = () => {
 
   useEffect(() => {
     if (message) {
-      navigate(`/otp-verification/${formData.email}`);
+      console.log(message);
+      navigate(`/otp-verification/${message.email}`);
       dispatch(resetAuthSlice());
     }
-  }, [dispatch, isAuthenticated, error, loading]);
-
-  if (isAuthenticated) {
-    loca;
-    return <Navigate to={"/Dashboard"} />;
-  }
+  }, [message]);
 
   // password
 

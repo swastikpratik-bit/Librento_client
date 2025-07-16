@@ -18,7 +18,7 @@ const authSlice = createSlice({
     },
     registerSuccess(state, action) {
       state.loading = false;
-      state.message = action.payload.message;
+      state.message = action.payload;
     },
     registerFailure(state, action) {
       state.loading = false;
@@ -154,7 +154,7 @@ export const resetAuthSlice = () => async (dispatch) => {
 };
 
 export const register = (data) => async (dispatch) => {
-  console.log(data);
+  // console.log(data);
   dispatch(authSlice.actions.registerRequest());
 
   console.log(" inside register data", data);
@@ -167,6 +167,7 @@ export const register = (data) => async (dispatch) => {
       },
     })
     .then((res) => {
+      console.log(res.data);
       dispatch(authSlice.actions.registerSuccess(res.data));
     })
     .catch((err) => {
